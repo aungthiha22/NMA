@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_medium">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_small"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="50dp"
+                    android:background="@color/orange"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_small">
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="OUR MISSION"
+                        android:textColor="@color/dark"/>
+
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My name is aung thiha kyaw"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/layout1"
+                android:background="@color/image_background"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_below="@id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/margin_small">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_small">
+
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OUR VISION"
+                        android:gravity="end"
+                        android:textColor="@color/dark"/>
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My name is aung thiha kyaw"
+                        android:gravity="end"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="50dp"
+                    android:background="@color/orange"
+                    android:layout_gravity="end"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_below="@id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_small"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="50dp"
+                    android:background="@color/orange"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_small">
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OUR JOURNEY"
+                        android:textColor="@color/dark"/>
+
+                    <com.rebook.nma.widget.ZawgyiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My name is aung thiha kyaw"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ExpandableListView
+
+                android:id="@+id/list_expandable"
+                android:layout_below="@id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:groupIndicator="@null">
+
+            </ExpandableListView>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

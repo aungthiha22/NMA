@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/margin_small"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="@dimen/margin_small">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_small">
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/lblCourseName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Course Name"
+                android:textColor="@color/dark"
+                 />
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/dark"
+                android:gravity="center"/>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/attendance_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/dark"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_small">
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/lblBatchName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Batch Name"
+                android:textColor="@color/dark"
+                />
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/dark"
+
+                android:gravity="center"/>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/attendance_batch"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Batch Name"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/dark"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/attendance_see_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="See Attendances"
+            android:textColor="@color/dark"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/general_background"
+            android:layout_margin="2dp"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

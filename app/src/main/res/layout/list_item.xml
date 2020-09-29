@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="@dimen/margin_small"
+        >
+
+        <ImageView
+            android:id="@id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/image_background"
+            android:visibility="visible"/>
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/branch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Marketing"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/font_size_tiny"
+            android:gravity="center"/>
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="The Marketing Plan"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/aileron_black"
+            android:textSize="@dimen/font_size_tiny"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:maxLines="2"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:padding="@dimen/margin_small"
+            android:progressBackgroundTint="@color/blue"
+            android:progressTint="@color/orange"
+            android:rating="3"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_small"/>
+        <View
+            android:id="@+id/viewHide"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/dark_little"/>
+        <LinearLayout
+            android:id="@+id/layoutEnroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="100000 က်ပ္"
+                android:textColor="@color/orange"
+                android:padding="@dimen/margin_10"/>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/item_enroll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="ENROLL"
+                android:textColor="@color/orange"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="@dimen/margin_10"/>
+        </LinearLayout>
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="တနလၤာ၊အဂၤါေန႔လည္ ၁:၀၀ နာရီမွ ၃:၀၀ နာရီထိ၊"
+            android:fontFamily="@font/aileron_black"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:textSize="@dimen/font_size_tiny"
+            android:layout_marginTop="@dimen/margin_medium"/>
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Network Engineering ဘာသာရပ္ကိုအေျခခံမွစတင္သင္ယူေလ့လာၿပီး လက္ေတြ႕အသံုးခ် လုပ္ငန္းခြင္ဝင္ေရာက္လိုသူ လူငယ္မ်ားအတြက္Microsoft Windows Server Lab မ်ား၊"
+            android:textSize="@dimen/font_size_tiny"
+            android:textColor="@color/dark_little"
+            android:layout_margin="@dimen/margin_medium"/>
+    </LinearLayout>
+</RelativeLayout>

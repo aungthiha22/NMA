@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:id="@+id/scroll_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/parami_logo"
+                android:padding="@dimen/margin_25"
+                android:layout_marginRight="@dimen/margin_bottom"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attendance"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_attendance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_discussion"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_discussion"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_presentation"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_presentation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assignment"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_assignment"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exam"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_exam"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/final_result"
+                    android:textColor="@color/dark_little"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/mark_final_result"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/loader_mk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        app:mk_type="TwinFishesSpinner"
+        app:mk_color="#0e29f2"
+        android:visibility="gone"/>
+</RelativeLayout>

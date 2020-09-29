@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.imyanmarhouse.imyanmarhouse.ui.SearchActivity">
+  <item android:id="@+id/call_settings"
+      android:title="Call Seller"
+      android:orderInCategory="90"
+      android:visible="false"
+      app:showAsAction="always"/>
+
+  <item
+      android:id="@+id/search"
+      android:icon="@mipmap/menu"
+      android:title="Search"
+      app:showAsAction="always"
+      android:visible="true"/>
+  <item
+    android:id="@+id/setting"
+    android:title="@string/action_settings"
+    android:visible="true"/>
+</menu>

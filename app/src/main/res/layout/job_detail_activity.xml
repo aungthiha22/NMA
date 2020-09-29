@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_bottom"
+            android:paddingBottom="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/parami_logo"
+                android:padding="@dimen/margin_25"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Job Position"
+                    android:textColor="@color/dark"
+                    android:padding="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_small"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/job_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_medium"
+                    android:text="instructor position"
+                    android:textSize="@dimen/font_size_small"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textColor="@color/dark"
+                    android:padding="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_small"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/job_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_medium"
+                    android:text="Full Time Job"
+                    android:textSize="@dimen/font_size_small"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Salary"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_small"
+                    android:gravity="center"/>
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/job_salary"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="20000 mmk"
+                    android:padding="@dimen/margin_medium"
+                    android:textSize="@dimen/font_size_small"
+                    android:textColor="@color/dark"/>
+            </LinearLayout>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/job_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:padding="@dimen/margin_medium"
+                android:textSize="@dimen/font_size_small"
+                android:text="If you have some ad-supported apps in Google play store, you may have received an email from Google in the below-mentioned format."/>
+
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your name"
+                android:textColor="@color/dark"
+                android:padding="@dimen/margin_medium"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_viewspOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="4dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                >
+                <com.rebook.nma.widget.ZawgyiEditText
+                    android:id="@+id/test"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:text=""
+                    android:background="@color/white"/>
+            </android.support.v7.widget.CardView>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your name"
+                android:textColor="@color/dark"
+                android:padding="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_15"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="4dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                >
+                <com.rebook.nma.widget.ZawgyiEditText
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text=""
+                    android:background="@color/white"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center" >
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/image_background"
+                android:text="Choice Your CV.."
+                android:padding="@dimen/margin_15"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/dark"/>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_25"
+                android:layout_marginRight="@dimen/margin_25"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center" >
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Submit"
+                    android:padding="@dimen/margin_15"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

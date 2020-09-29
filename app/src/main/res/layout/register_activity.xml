@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_20">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/parami_logo"
+                android:layout_gravity="center"
+                android:padding="@dimen/margin_10"/>
+
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/font_size_medium"
+                android:text="@string/welcome_nma"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_small"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/facebook"
+                    android:layout_margin="@dimen/margin_10"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/gmail"
+                    android:layout_margin="@dimen/margin_10"/>
+            </LinearLayout>
+
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="------------------OR------------------"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_25"
+                android:textSize="@dimen/font_size_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_20">
+                <com.rebook.nma.widget.ZawgyiEditText
+                    android:id="@+id/register_first_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:backgroundTint="@color/hint_color"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_marginRight="@dimen/margin_medium"/>
+
+                <com.rebook.nma.widget.ZawgyiEditText
+                    android:id="@+id/register_last_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:backgroundTint="@color/hint_color"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_marginLeft="@dimen/margin_medium"/>
+
+            </LinearLayout>
+            <com.rebook.nma.widget.ZawgyiEditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:backgroundTint="@color/hint_color"
+                android:textSize="@dimen/font_size_small"/>
+            <com.rebook.nma.widget.ZawgyiEditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:backgroundTint="@color/hint_color"
+                android:textSize="@dimen/font_size_small"
+                android:inputType="textEmailAddress"/>
+            <com.rebook.nma.widget.ZawgyiEditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:backgroundTint="@color/hint_color"
+                android:textSize="@dimen/font_size_small"/>
+            <com.rebook.nma.widget.ZawgyiEditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:backgroundTint="@color/hint_color"
+                android:textSize="@dimen/font_size_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginRight="@dimen/margin_10">
+                <com.rebook.nma.widget.ZawgyiCheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Keep Me Signed"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_tiny"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_20">
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/register"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="SING UP"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:padding="@dimen/margin_15"/>
+
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/login"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="SING IN"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_15"/>
+            </LinearLayout>
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Yet a Member"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_10"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_medium">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="4dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="@dimen/margin_small">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="HTD Center-2 မွာသင္တန္းစမည္။"
+                android:fontFamily="@font/aileron_regular"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/tablet_font_small"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_margin="@dimen/margin_medium"/>
+            <ImageView
+                android:id="@+id/general_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/white"
+                android:paddingTop="@dimen/margin_small"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:visibility="visible"
+                android:src="@mipmap/logo"/>
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_small">
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180000"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@mipmap/substract"
+                android:layout_marginRight="@dimen/margin_15"
+                android:visibility="gone"
+                android:textSize="@dimen/tablet_font_small"/>
+
+            <com.rebook.nma.widget.ZawgyiTextView
+                android:id="@+id/discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200000"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/aileron_black"
+                android:textSize="@dimen/tablet_font_small"/>
+        </LinearLayout>
+
+        <com.rebook.nma.widget.ZawgyiTextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Network Engineering ဘာသာရပ္ကိုအေျခခံမွစတင္သင္ယူေလ့လာၿပီး လက္ေတြ႕အသံုးခ် လုပ္ငန္းခြင္ဝင္ေရာက္လိုသူ လူငယ္မ်ားအတြက္Microsoft Windows Server Lab မ်ား၊"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:maxLines="3"
+            android:textSize="@dimen/font_size_medium"/>
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cacaca"/>-->
+
+                <com.rebook.nma.widget.ZawgyiTextView
+                    android:id="@+id/view_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:text="@string/view_detail"
+                    android:padding="@dimen/margin_15"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:textSize="@dimen/tablet_font_small"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

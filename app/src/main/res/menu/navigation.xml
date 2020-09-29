@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@mipmap/notification"
+        android:title="Notification"
+        android:visible="true"
+        />
+
+   <item
+        android:id="@+id/navigation_search"
+        android:title="Search"
+        android:icon="@mipmap/search"
+        android:visible="true"
+        />
+     <item
+        android:id="@+id/navigation_course"
+        android:title="Course"
+        android:icon="@mipmap/course"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:title="Profile"
+        android:icon="@mipmap/profile"
+        android:visible="true"
+        />
+
+</menu>

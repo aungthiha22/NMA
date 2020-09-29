@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginRight="@dimen/margin_25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@mipmap/logo"
+            android:layout_gravity="end"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="299dp"
+           android:layout_marginRight="@dimen/margin_25"
+           android:layout_marginLeft="@dimen/margin_25"
+           >
+
+           <android.support.v4.view.ViewPager
+               android:id="@+id/viewPager"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="5dp"
+
+               />
+
+           <me.relex.circleindicator.CircleIndicator
+               android:id="@+id/indicator"
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:layout_alignBottom="@+id/viewPager"
+               android:layout_alignParentStart="true"
+               android:layout_marginBottom="10dp"
+               android:layout_alignParentLeft="true" />
+
+       </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_25">
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/margin_25"
+                android:background="@drawable/view_background"
+                android:text="sing up"
+                android:textSize="@dimen/margin_medium"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/sing_in"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/margin_25"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:text="sing in"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/connect_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:text="connect with facebook"
+            android:textSize="@dimen/margin_medium"
+            android:background="@drawable/view_background"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:text="connect with google"
+            android:layout_marginTop="24dp"
+            android:textSize="@dimen/margin_medium"
+            android:background="@drawable/general_background"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:text="Terms and Condition"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

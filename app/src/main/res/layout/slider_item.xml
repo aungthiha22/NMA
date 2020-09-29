@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ece2e2e2">
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:adjustViewBounds="true"
+      android:scaleType="fitCenter"
+      android:src="@mipmap/study"
+      android:foregroundGravity="left"
+      android:layout_alignParentRight="true"
+      android:layout_margin="@dimen/margin_10"
+      />
+
+  <com.rebook.nma.widget.ZawgyiTextView
+      android:id="@+id/slide_text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Your Future Start Here!"
+      android:textColor="@color/dark"
+      android:textSize="@dimen/font_size_small"
+      android:fontFamily="@font/raleway_bold"
+      android:padding="@dimen/margin_10"
+      android:layout_marginTop="@dimen/margin_20"/>
+
+  <com.rebook.nma.widget.ZawgyiTextView
+      android:id="@+id/text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="THE BEST EDUCATION NMA"
+      android:textColor="@color/dark"
+      android:layout_below="@id/slide_text1"
+      android:textSize="@dimen/font_size_small"
+      android:fontFamily="@font/aileron_black"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginBottom="@dimen/margin_20"/>
+  <com.rebook.nma.widget.ZawgyiButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/text2"
+      android:background="@color/blue"
+      android:layout_margin="@dimen/margin_15"
+      android:text="enroll"
+      android:textColor="@color/orange"
+      />
+</RelativeLayout>

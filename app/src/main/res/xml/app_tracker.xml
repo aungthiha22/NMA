@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="ga_sessionTimeout">300</integer>
+
+  <screenName name="com.rebook.nma.ui.MainActivity">
+    Home Screen
+  </screenName>
+  <screenName name="com.rebook.nma.ui.ProductList">
+    Product Screen
+  </screenName>
+
+  <!-- Enable automatic Activity measurement -->
+  <bool name="ga_autoActivityTracking">false</bool>
+
+  <string name="ga_trackingId">UA-128277761-1</string>
+  <!--<string name="ga_trackingId">UA-XXXXXXXX-X</string>-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+</resources>

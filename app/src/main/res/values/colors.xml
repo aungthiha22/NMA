@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8d0504</color>
+    <color name="colorPrimaryDark">#C20A09</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="hint_color">#ddb4bcba</color>
+    <color name="green">#1B8D0F</color>
+    <color name="red">#2FFF0806</color>
+    <color name="yellow">#adbc07</color>
+    <color name="blue">#1f27ec</color>
+    <color name="orange">#fbe47709</color>
+    <color name="dark">#ee0a0a0a</color>
+    <color name="dark_little">#353535</color>
+    <color name="image_background">#d3c5c5cf</color>
+    <color name="pager_background">#eaeef5</color>
+    <color name="popular_course">#cfcfcf</color>
+    <color name="popular_news">#e5e5e5</color>
+    <color name="list_background">#ededec</color>
+</resources>
